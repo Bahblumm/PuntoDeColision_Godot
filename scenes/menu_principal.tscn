@@ -1,0 +1,64 @@
+[gd_scene load_steps=5 format=3 uid="uid://dkg2mcrcm6k85"]
+
+[ext_resource type="Script" uid="uid://dfl6y8tqf5soj" path="res://scripts/menu_principal.gd" id="1_iep14"]
+[ext_resource type="FontFile" uid="uid://bjdludfowvkgk" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="1_mk4g1"]
+[ext_resource type="Texture2D" uid="uid://dvdjlb7lmb5ob" path="res://assets/FondoMenu.jpg" id="2_486ty"]
+[ext_resource type="FontFile" uid="uid://c8ixccexlgal3" path="res://assets/fonts/PixelOperator8.ttf" id="2_iep14"]
+
+[node name="Menu Principal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_iep14")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_486ty")
+stretch_mode = 6
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -124.0
+offset_top = -45.0
+offset_right = 124.0
+offset_bottom = 45.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 0.3529412, 1)
+theme_override_fonts/font = ExtResource("1_mk4g1")
+text = "PUNTO DE COLISION"
+horizontal_alignment = 1
+
+[node name="Start" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_iep14")
+text = "Start Game"
+
+[node name="Exit" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_iep14")
+text = "Exit Game"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Exit" to="." method="_on_exit_pressed"]

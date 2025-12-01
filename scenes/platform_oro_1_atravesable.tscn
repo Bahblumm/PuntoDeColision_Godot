@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ejr0nfsa8yb2"]
+
+[ext_resource type="PackedScene" uid="uid://b283u4k5584sm" path="res://scenes/platform_hielo_1_atravesable.tscn" id="1_jmiwq"]
+
+[node name="PlatformOro1atravesable" instance=ExtResource("1_jmiwq")]
+
+[node name="Sprite2D" parent="." index="0"]
+region_rect = Rect2(0, 32, 16, 9)

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://s1041db86xja"]
+
+[ext_resource type="PackedScene" uid="uid://m0dvbt31hvr8" path="res://scenes/platform_hielo_2.tscn" id="1_gyx8d"]
+
+[node name="platform_arena_2" instance=ExtResource("1_gyx8d")]
+
+[node name="Sprite2D" parent="." index="0"]
+region_rect = Rect2(16, 16, 32, 9)

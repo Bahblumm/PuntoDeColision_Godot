@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dn8k6cdk3qujo"]
+
+[ext_resource type="PackedScene" uid="uid://m0dvbt31hvr8" path="res://scenes/platform_hielo_2.tscn" id="1_fe14t"]
+
+[node name="PlatformCesped2" instance=ExtResource("1_fe14t")]
+
+[node name="Sprite2D" parent="." index="0"]
+region_rect = Rect2(16, 0, 32, 9)

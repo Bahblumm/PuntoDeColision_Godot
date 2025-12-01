@@ -1,0 +1,15 @@
+# Godot 4+ specific ignores
+# Archivos temporales de Godot
+.godot/
+.mono/
+export_presets.cfg
+# Configuración local de usuario
+.import/
+# Archivos grandes de exportación y de prueba
+*.exe
+*.zip
+*.pck
+*.release
+# Archivos de la herramienta (NO subas esto al repo)
+Godot_v*.exe
+LibreSprite*.zip
